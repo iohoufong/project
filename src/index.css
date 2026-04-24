@@ -13,8 +13,12 @@
     width: 100%;
     min-height: 100%;
     overflow-x: hidden;
+    background-color: #0a0203;
+    color: rgba(240,220,160,0.9);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    overscroll-behavior-y: none;
   }
 
   #root {
@@ -26,8 +30,22 @@
   }
 
   ::selection {
-    background: rgba(212, 175, 55, 0.3);
-    color: #7A0C14;
+    background: rgba(212, 175, 55, 0.35);
+    color: #3E0709;
+  }
+
+  input, button, textarea {
+    font: inherit;
+  }
+
+  input::placeholder {
+    color: rgba(240,220,160,0.35);
+    font-style: italic;
+  }
+
+  input:focus {
+    border-color: rgba(212,175,55,0.75) !important;
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.15);
   }
 }
 
