@@ -254,9 +254,41 @@ export default function RSVP() {
           </motion.div>
         )}
 
+        {/* Closing quote */}
+        <motion.div
+          className="mt-20 flex flex-col items-center gap-4 max-w-md"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.4, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <svg width="22" height="22" viewBox="0 0 22 22" style={{ opacity: 0.7 }}>
+            <path
+              d="M11 2 L12.4 9.6 L20 11 L12.4 12.4 L11 20 L9.6 12.4 L2 11 L9.6 9.6 Z"
+              fill="rgba(212,175,55,0.7)"
+            />
+          </svg>
+          <p
+            className="text-center"
+            style={{
+              fontFamily: 'Cormorant Garamond, serif',
+              fontStyle: 'italic',
+              fontWeight: 300,
+              fontSize: 'clamp(1.05rem, 3.2vw, 1.4rem)',
+              color: 'rgba(240,220,160,0.78)',
+              lineHeight: 1.55,
+              letterSpacing: '0.02em',
+            }}
+          >
+            “Together is our favorite
+            <br />
+            place to be.”
+          </p>
+        </motion.div>
+
         {/* Footer monogram */}
         <motion.div
-          className="mt-16 flex flex-col items-center gap-3"
+          className="mt-12 flex flex-col items-center gap-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

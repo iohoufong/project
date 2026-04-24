@@ -179,9 +179,10 @@ export default function DateSection() {
                 fontSize: 'clamp(1.6rem, 5vw, 2.2rem)',
                 fontWeight: 400,
                 color: 'rgba(240,220,160,0.9)',
+                letterSpacing: '0.02em',
               }}
             >
-              26
+              2026
             </span>
           </div>
         </motion.div>

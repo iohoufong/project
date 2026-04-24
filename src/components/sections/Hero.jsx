@@ -51,23 +51,25 @@ export default function Hero() {
           animate="visible"
         >
           <p
+            dir="rtl"
+            lang="ar"
             style={{
-              fontFamily: 'Great Vibes, cursive',
-              fontSize: 'clamp(1.4rem, 5vw, 2rem)',
-              color: 'rgba(240,220,160,0.85)',
-              letterSpacing: '0.02em',
-              lineHeight: 1.4,
+              fontFamily: 'Amiri, "Noto Naskh Arabic", serif',
+              fontSize: 'clamp(1.6rem, 5.5vw, 2.4rem)',
+              color: 'rgba(240,220,160,0.92)',
+              lineHeight: 1.6,
+              filter: 'drop-shadow(0 2px 6px rgba(212,175,55,0.25))',
             }}
           >
-            Bismillah ar-Rahman ar-Rahim
+            بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
           </p>
           <p
-            className="mt-1 uppercase"
+            className="mt-2 uppercase"
             style={{
               fontFamily: 'Cinzel, serif',
               fontSize: 'clamp(0.55rem, 1.8vw, 0.68rem)',
               letterSpacing: '6px',
-              color: 'rgba(212,175,55,0.5)',
+              color: 'rgba(212,175,55,0.55)',
             }}
           >
             In the name of God
